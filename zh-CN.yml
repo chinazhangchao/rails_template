@@ -1,0 +1,20 @@
+zh-CN:
+  hello: 你好
+  show: 详情
+  back: 列表
+  edit: 编辑
+  destroy: 删除
+  new: 新增
+  views:
+    pagination:
+      first: "首页"
+      last: "尾页"
+      previous: "上一页"
+      next: "下一页"
+      truncate: "&hellip;"
+  activerecord:
+    models:
+      vehicle/brand: 汽车品牌
+    attributes:
+      vehicle/brand:
+        cn_name: 品牌名称

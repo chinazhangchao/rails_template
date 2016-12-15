@@ -1,0 +1,355 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require semantic
+ *= require_tree .
+ *= require_self
+ */
+ 
+ #error_explanation h2,.title-menu,.title,.container-table tr td,.left-menu .left-menu-a,.ui.button,.pages .ui.pagination.menu .item,.ui.form input[type="text"], input.search,#error_explanation{
+     font-family: "Times New Roman", "Microsoft YaHei", "微软雅黑", "华文宋体";
+}
+.ui.form input[type="text"]{
+    font-size: 13px;
+    padding: 4px 8px;
+    height: 26px;
+}
+.ui.selection.dropdown{
+    height: 26px;
+    padding: 4px 8px;
+    min-height: 26px;
+}
+.ui.selection.dropdown > .dropdown.icon{
+    padding: 4px;
+}
+.ui.search.selection.dropdown > input.search{
+    line-height: 1.2em;
+    font-size: 1.2em;
+    padding: 0.3em 2.1em 0.5em 0.6em;
+}
+.ui.search.dropdown > .text{
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+[data-tooltip]:after{
+    padding: 4px 8px;
+}
+/*头部*/
+.title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 50px;
+    height: 52px;
+    line-height: 52px;
+}
+
+.ui.menu{
+    margin: 0;
+}
+/*侧导航*/
+.ui.attached.segment,.ui.segment{
+    border: none;
+}
+.ui.segment{
+    padding: 0;
+}
+.left-menu{
+  height:100%;
+}
+.segment,.pointing{
+    height:530px;
+}
+/*整体内容*/
+.container-table{
+    width: 100%;
+    height:100%
+}
+.container-table .second,.container-table .first{
+    padding: 10px;
+    vertical-align: top;
+}
+.container-table .first{
+    width: 230px;
+}
+
+.ui.button.operate-img{
+    background-color: #fff;
+    padding: 0;
+    min-width: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+.operate-img img{
+    padding-top: 5px;
+}
+/*表格*/
+.ui.table.info-table thead th{
+    padding: 0.7em;
+}
+.table.info-table td{
+  padding: 0.5em 0.7em;
+}
+/*弹框*/
+.prompt-info{
+    padding: 2.5rem 1.5rem;
+}
+/*按钮*/
+.button{
+    position: relative;
+}
+.ui.button,.ui.mini.button{
+    font-weight: normal;
+    min-width: 88px;
+    height: 26px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 26px;
+}
+.button a{
+   opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*编辑页面*/
+.edit{
+    padding: 10px;
+}
+.ui.form.edit-form input{
+    margin: 5px 0;
+}
+.ui.form.edit-form td{
+    padding:0 ;
+}
+.ui.form .field>label{
+    font-weight: normal;
+}
+.ui.form .required.field>label:after{
+    font-weight: bold;
+}
+.image-container{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+.image-container .ui.tiny.images,.image-container .ui.tiny.images img{
+    width:100%;
+    height: 100%;
+}
+.image-container .remove-container{
+    cursor:pointer;
+    opacity: 1;
+    height: 20px;
+    color: #333333;
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: -10px;
+    right: -12px;
+}
+.image-container .remove-container i{
+   font-size: 20px;
+   margin: 0
+}
+.submit-btn{
+    position: relative;
+    margin-top: 22px;
+    display: inline-block;
+}
+.submit-btn input{
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right: 0;
+    width: 100%;
+    height:100%;
+}
+.fieldset{
+    border:1px solid rgba(34, 36, 38, 0.15);
+    border-radius: 0.28571429rem;
+}
+.upload_image_container{
+    position: relative;
+    width:88px;
+    height:26px;
+   
+}
+.upload_img_input{
+   opacity:0; 
+   position:absolute;
+   left:-73px;
+   top:0;
+   height:26px;
+   cursor:pointer;
+}
+/*分页*/
+.pages .ui.menu{
+    min-height: 2.5em;
+}
+.pages .ui.pagination.menu .item{
+    padding: 0 0.3em;
+    font-size: 13px;
+    padding: 0 0.3em;
+    display: inline-block;
+    line-height: 33px
+}
+/*错误提示框*/
+#error_explanation{
+    border: 1px solid #e0b4b4;
+    background-color: #fff6f6;
+    border-radius: .28571429rem; 
+}
+#error_explanation h2{
+    color: #ad5755;
+    background-color: #fff6f6;
+    border-radius: .28571429rem; 
+}
+#error_explanation ul li{
+  color: #ad5755;
+  list-style: disc;
+}
+.field_with_errors{
+    padding: 0;
+    background-color: #fff;
+    color: #ad5755;
+}
+.ui.input .field_with_errors input{
+    border: 1px solid #e0b4b4;
+    background-color: #fff6f6;
+}
+/*详情*/
+.detail{
+    padding:10px;
+}
+
+/*弹出框宽度*/
+.ui.modal.small.transition{
+    width: 400px;
+    margin-left: -200px;
+}
+
+/*图标垂直居中*/
+.ui.checkbox{
+    min-height: 16px;
+}
+.ui.checkboxtitle{
+    min-height: 13px;
+}
+/*表单头部*/
+.ui.form .fields{
+    margin-bottom: 0;
+}
+/*table*/
+.passclass{
+    margin-bottom: 15px;
+}
+.ui.table.info-table{
+    margin-top: 10px;
+}
+/*下拉输入框*/
+.ui.fluid.multiple.search.selection.dropdown{
+    width: 146px;
+}
+.ui.fluid.multiple.search.selection.dropdown .default.text{
+    margin: 0;
+}
+.ui.fluid.multiple.search.selection.dropdown input.search {
+    font-size: 1.2em;
+    width: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+.ui.multiple.dropdown > .label{
+    border: none;
+    background: none;
+    box-shadow:none;
+    margin: 0;
+    font-size: 1.2em;
+    padding-top: 2px;
+    float: left;
+}
+
+/*弹窗*/
+.ui.promptmodel{
+    display: block;
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    margin-left: -150px;
+    min-height: 60px;
+    padding: 20px 15px;
+    line-height: 20px;
+    top: 50%;
+    margin-top: -60px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background: #f0f0f0;
+    box-shadow: 10px 10px 5px #ddd;
+    z-index: 1001;
+    text-align: center;
+}
+
+/*详情样式*/
+.detail table tr td{
+    padding:9px 5px 9px 0;
+    font-size: 1rem;
+}
+.detail p{
+   padding-top: 10px;
+}
+
+/*loading*/
+.upload_loading_wrap .mask{
+    position:absolute;
+    width: 100%; 
+    height:100%;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 9998;
+    left:0;
+}
+.upload_loading_wrap .load_pos{
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    top: 16%; 
+    left: 50%;
+    margin-top:-25px;
+    margin-left: -70px;
+    z-index: 10000
+}
+.upload_loading_wrap .load_txt{
+    background: #fff;
+    border-radius: 3px;
+    color: #666;
+    border: 1px solid #d1d1d1; 
+    text-align: center;
+    padding: 5px 10px;
+}
+.loader {
+    animation: 1.3s linear 0s normal none infinite running load4;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 1em;
+    margin: 5em auto;
+    position: relative;
+    text-indent: -9999em;
+    width: 1em;
+}

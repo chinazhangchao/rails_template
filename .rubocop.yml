@@ -1,0 +1,55 @@
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'lib/**/*'
+    - 'bin/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'config.ru'
+    - 'config/redis.rb'
+Metrics/LineLength:
+  Max: 150
+Metrics/MethodLength:
+  Max: 50
+Metrics/ParameterLists:
+  Max: 12
+Metrics/AbcSize:
+  Max: 50
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/PerceivedComplexity:
+  Max: 10
+Style/GuardClause:
+  MinBodyLength: 5
+Style/AsciiComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+Style/BracesAroundHashParameters:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/AutoResourceCleanup:
+  Enabled: true
+Style/CollectionMethods:
+  Enabled: true
+Style/Encoding:
+  Enabled: true
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+Style/MultilineAssignmentLayout:
+  Enabled: true
+Style/OptionHash:
+  Enabled: true
+Style/StringMethods:
+  Enabled: true
+Style/SymbolArray:
+  Enabled: true
+Style/NonNilCheck:
+  IncludeSemanticChanges: true
+Style/Send:
+  Enabled: true
+Rails:
+  Enabled: true

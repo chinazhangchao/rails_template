@@ -13,9 +13,17 @@
 !/log/.keep
 !/tmp/.keep
 
+.DS_Store
+
 # Ignore Byebug command history file.
 .byebug_history
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
 .idea
 rubocopresult
+nohup.out
 
 public/assets

@@ -14,7 +14,7 @@ module Dataaudit
     config.time_zone = (ENV['TIME_ZONE'] || 'Beijing')
     config.i18n.default_locale = (ENV['LOCALE'] || 'zh-CN').to_sym
 
-    config.web_console.whitelisted_ips = '10.0.0.0/16' unless Rails.env.production?
+    config.web_console.whitelisted_ips = '10.0.0.0/16' if Rails.env.development?
 
     # config.autoload_paths << "#{Rails.root}/app/models/"
   end

@@ -5,9 +5,8 @@ source 'https://gems.ruby-china.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'rails-i18n', '~> 5.0.0'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
+#gem 'pg', '~> 0.18'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -17,7 +16,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -31,6 +29,7 @@ gem 'ransack'
 gem 'schema_validations'
 gem 'dotenv-rails'
 gem 'def_enum_helper'
+gem 'pundit'
 
 #background cron
 gem 'sidekiq'

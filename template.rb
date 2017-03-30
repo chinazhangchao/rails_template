@@ -6,6 +6,7 @@ src_dir = File.expand_path("../", __FILE__) + '/'
 
 FileUtils.cp("#{src_dir}Gemfile", "./")
 
+FileUtils.cp("#{src_dir}.env", "./")
 FileUtils.cp("#{src_dir}.env.production", "./")
 FileUtils.cp("#{src_dir}.gitignore", "./")
 FileUtils.cp("#{src_dir}.rubocop.yml", "./")

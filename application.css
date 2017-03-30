@@ -14,9 +14,19 @@
  *= require_tree .
  *= require_self
  */
- 
- #error_explanation h2,.title-menu,.title,.container-table tr td,.left-menu .left-menu-a,.ui.button,.pages .ui.pagination.menu .item,.ui.form input[type="text"], input.search,#error_explanation{
-     font-family: "Times New Roman", "Microsoft YaHei", "微软雅黑", "华文宋体";
+
+#error_explanation h2,
+.table,
+.title-menu,
+.title,
+.container-table tr td,
+.left-menu .left-menu-a,
+.ui.button,
+.pages .ui.pagination.menu .item,
+.ui.form input[type="text"],
+.ui.form,
+#error_explanation {
+    font-family: "Times New Roman", "Microsoft YaHei", "微软雅黑", "华文宋体";
 }
 .ui.form input[type="text"]{
     font-size: 13px;
@@ -53,9 +63,6 @@
     line-height: 52px;
 }
 
-.ui.menu{
-    margin: 0;
-}
 /*侧导航*/
 .ui.attached.segment,.ui.segment{
     border: none;

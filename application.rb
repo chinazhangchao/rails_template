@@ -15,7 +15,5 @@ module Dataaudit
     config.i18n.default_locale = (ENV['LOCALE'] || 'zh-CN').to_sym
 
     config.web_console.whitelisted_ips = '10.0.0.0/16' if Rails.env.development?
-
-    # config.autoload_paths << "#{Rails.root}/app/models/"
   end
 end

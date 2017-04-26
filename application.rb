@@ -12,6 +12,7 @@ module Dataaudit
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.time_zone = (ENV['TIME_ZONE'] || 'Beijing')
+    config.active_record.default_timezone = :local
     config.i18n.default_locale = (ENV['LOCALE'] || 'zh-CN').to_sym
 
     config.web_console.whitelisted_ips = '10.0.0.0/16' if Rails.env.development?

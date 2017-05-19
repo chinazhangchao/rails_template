@@ -30,6 +30,7 @@ FileUtils.cp("#{src_dir}application.js", "app/assets/javascripts/")
 FileUtils.cp("#{src_dir}application.css", "app/assets/stylesheets/")
 FileUtils.cp("#{src_dir}application.rb", "config/")
 FileUtils.cp("#{src_dir}zh-CN.yml", "config/locales/")
+FileUtils.cp("#{src_dir}activerecord-zh-CN.yml", "config/locales/")
 
 run "bundle install"
 

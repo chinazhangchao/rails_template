@@ -12,11 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require semantic-ui
 //= require jquery.form
 //= require_tree .
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
     var dropdownSetting = {
         forceSelection: false,
         fullTextSearch: true,

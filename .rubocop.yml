@@ -39,7 +39,7 @@ Style/Encoding:
   Enabled: true
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
-Style/MultilineAssignmentLayout:
+Layout/MultilineAssignmentLayout:
   Enabled: true
 Style/OptionHash:
   Enabled: true

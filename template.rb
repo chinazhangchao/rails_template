@@ -4,6 +4,9 @@ route "root to: 'home#index'"
 
 src_dir = File.expand_path("../", __FILE__) + '/'
 
+FileUtils.mkdir_p("vendor/assets/stylesheets/")
+FileUtils.mkdir_p("vendor/assets/javascripts/")
+
 FileUtils.cp("#{src_dir}Gemfile", "./")
 
 FileUtils.cp("#{src_dir}.env", "./")

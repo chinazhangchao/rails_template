@@ -1,0 +1,30 @@
+<div class="login">
+  <div class="login-title">
+    <h1>
+      <%= t(:site_title) %>
+    </h1>
+  </div>
+  <div class="login_info">
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|%>
+        <div class="clear">
+          <p class="login-input-lable">手机号</p>
+          <%= f.text_field :phone, autofocus: true, required: true, placeholder: '手机号' ,class: 'input-right'%>
+        </div>
+        <div class="clear">
+          <p class="login-input-lable">密码</p>
+          <%= f.password_field :password, autocomplete: "off", required: true, placeholder: '密码' ,class: 'input-right'%>
+        </div>
+        <% if flash.now[:alert].present? %>
+          <div class="errorMessage"><%= flash.now[:alert]%></div>
+        <% end %>
+        <div class="actions">
+          <%= f.submit t('.sign_in'),class: 'submit-button'%>
+        </div>
+    <% end %>
+
+  </div>
+  <div class='bottom-title'>我的车车提供</div>
+</div>
+
+<div class="bg"></div>

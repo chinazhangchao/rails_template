@@ -5,8 +5,8 @@ zh-CN:
       messages:
         record_invalid: "验证失败: %{errors}"
         restrict_dependent_destroy:
-          has_one: 该数据下有%{record}无法删除
-          has_many: 该数据下有%{record}无法删除
+          has_one: 该数据被%{record}使用，无法删除
+          has_many: 该数据被%{record}使用，无法删除
   date:
     abbr_day_names:
     - 周日
@@ -104,38 +104,38 @@ zh-CN:
       second: 秒
       year: 年
   errors:
-    format: "%{attribute}%{message}"
+    format: "%{message}"
     messages:
-      accepted: 必须是可被接受的
-      blank: 不能为空字符
-      present: 必须是空白
-      confirmation: 与确认值不匹配
-      empty: 不能留空
-      equal_to: 必须等于 %{count}
-      even: 必须为双数
-      exclusion: 是保留关键字
-      greater_than: 必须大于 %{count}
-      greater_than_or_equal_to: 必须大于或等于 %{count}
-      inclusion: 不包含于列表中
-      invalid: 是无效的
-      less_than: 必须小于 %{count}
-      less_than_or_equal_to: 必须小于或等于 %{count}
-      model_invalid: "验证失败: %{errors}"
-      not_a_number: 不是数字
-      not_an_integer: 必须是整数
-      odd: 必须为单数
-      required: 必须存在
-      taken: 已经被使用
+      accepted: "%{attribute}必须是可被接受的"
+      blank: "%{attribute}不能为空字符"
+      present: "%{attribute}必须是空白"
+      confirmation: "%{attribute}与确认值不匹配"
+      empty: "%{attribute}不能留空"
+      equal_to: "%{attribute}必须等于 %{count}"
+      even: "%{attribute}必须为双数"
+      exclusion: "%{attribute}是保留关键字"
+      greater_than: "%{attribute}必须大于 %{count}"
+      greater_than_or_equal_to: "%{attribute}必须大于或等于 %{count}"
+      inclusion: "%{attribute}不包含于列表中"
+      invalid: "%{attribute}是无效的"
+      less_than: "%{attribute}必须小于 %{count}"
+      less_than_or_equal_to: "%{attribute}必须小于或等于 %{count}"
+      model_invalid: "%{attribute}验证失败: %{errors}"
+      not_a_number: "%{attribute}不是数字"
+      not_an_integer: "%{attribute}必须是整数"
+      odd: "%{attribute}必须为单数"
+      required: "%{attribute}必须存在"
+      taken: "%{attribute}已存在"
       too_long:
-        one: 过长（最长为一个字符）
-        other: 过长（最长为 %{count} 个字符）
+        one: "%{attribute}过长（最长为一个字符）"
+        other: "%{attribute}过长（最长为 %{count} 个字符）"
       too_short:
-        one: 过短（最短为一个字符）
-        other: 过短（最短为 %{count} 个字符）
+        one: "%{attribute}过短（最短为一个字符）"
+        other: "%{attribute}过短（最短为 %{count} 个字符）"
       wrong_length:
-        one: 长度非法（必须为一个字符）
-        other: 长度非法（必须为 %{count} 个字符）
-      other_than: 长度非法（不可为 %{count} 个字符
+        one: "%{attribute}长度非法（必须为一个字符）"
+        other: "%{attribute}长度非法（必须为 %{count} 个字符）"
+      other_than: "%{attribute}长度非法（不可为 %{count} 个字符"
     template:
       body: 如下字段出现错误：
       header:

@@ -6,10 +6,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.3'
+gem 'rails', '~> 5.1.4'
 # Use mysql as the database for Active Record
-gem 'mysql2', '= 0.4.6'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -29,25 +30,29 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'def_enum_helper'
 gem 'devise'
 gem 'devise-i18n'
-gem 'semantic-ui-sass', '~> 2.2', '>= 2.2.6.0'
-gem 'kaminari'
-gem 'ransack'
-gem 'schema_validations'
+gem 'devise_custom_authenticatable'
 gem 'dotenv-rails'
-gem 'def_enum_helper'
+gem 'kaminari'
 gem 'pundit'
-gem 'jquery-rails'
+gem 'ransack'
+gem 'ruby_pinyin'
+gem 'schema_validations'
+gem 'whenever', require: false
+gem 'rubocop', require: false
+#gem 'union-erp-common', path: '../union-erp-common'
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
 
-#background cron
-gem 'sidekiq'
-gem 'sinatra', require: nil
+gem  'elasticsearch-model'
+gem  'elasticsearch-rails'
 
 group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver

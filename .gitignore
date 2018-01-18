@@ -27,3 +27,9 @@ rubocopresult
 nohup.out
 
 public/assets
+
+*.log
+public/static/**/*
+public/main.html
+.tags
+.vscode/

@@ -1,10 +1,11 @@
 zh-CN:
   hello: 你好
   show: 详情
-  back: 列表
+  back: 返回
   edit: 编辑
   destroy: 删除
   new: 新增
+  site_title: 车福金鞍汽配联盟
   views:
     pagination:
       first: "首页"
@@ -23,7 +24,15 @@ zh-CN:
           display_entries: "共%{total}条数据"
   activerecord:
     models:
-      vehicle/brand: 汽车品牌
+      part_name: 配件名称
+    # errors:
+    #     models:
+    #       goods:
+    #         attributes:
+    #           channel_id:
+    #             taken: 已存在（OE、产地、品牌相同）
     attributes:
-      vehicle/brand:
-        cn_name: 品牌名称
+      part_name:
+        name: 名称
+        alias: 别名
+        goods: 商品

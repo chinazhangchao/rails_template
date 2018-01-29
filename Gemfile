@@ -40,6 +40,7 @@ gem 'kaminari'
 gem 'pundit'
 gem 'ransack'
 gem 'ruby_pinyin'
+gem 'sqlite3'
 gem 'schema_validations'
 gem 'whenever', require: false
 gem 'rubocop', require: false

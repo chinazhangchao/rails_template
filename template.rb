@@ -40,14 +40,14 @@ FileUtils.cp("#{src_dir}application.html.erb", 'app/views/layouts/')
 # FileUtils.cp("#{src_dir}devise.rb", "config/initializers/")
 
 inject_into_file 'config/application.rb', before: "  end\nend" do
-  <<~EOF
+  <<-APPLICATIONRB
     config.generators.assets = false
     config.generators.helper = false
 
     config.time_zone = 'Beijing'
     config.i18n.available_locales = %i[en zh-CN]
     config.i18n.default_locale = :'zh-CN'
-  EOF
+  APPLICATIONRB
 end
 
 FileUtils.cp("#{src_dir}zh-CN.yml", 'config/locales/')
@@ -58,7 +58,7 @@ after_bundle do
   run 'yarn add jquery popper.js semantic-ui-sass'
 
   inject_into_file 'config/webpack/environment.js', after: "module.exports = environment\n" do
-    <<~EOF
+    <<~ENVIRONMENTJS
       const webpack = require("webpack")
 
       environment.plugins.append("Provide", new webpack.ProvidePlugin({
@@ -66,17 +66,17 @@ after_bundle do
         jQuery: 'jquery',
         Popper: ['popper.js', 'default']
       }))
-    EOF
+    ENVIRONMENTJS
   end
 
   inject_into_file 'app/javascript/packs/application.js', after: "require(\"channels\")\n" do
-    <<~EOF
+    <<~APPLICATIONJS
       require("semantic-ui-sass")
       
       document.addEventListener("turbolinks:load", function () {
           $('.ui.checkbox').checkbox();
       })
-    EOF
+    APPLICATIONJS
   end
 
   generate(:controller, 'home', 'index', '--skip-routes')

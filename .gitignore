@@ -13,23 +13,29 @@
 !/log/.keep
 !/tmp/.keep
 
-.DS_Store
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
 
-# Ignore Byebug command history file.
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+
+/public/assets
 .byebug_history
 
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Ignore master key for decrypting credentials and more.
+/config/master.key
 
-.idea
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
 rubocopresult
+/data/
+.vscode
+.DS_Store
 nohup.out
-
-public/assets
-
-*.log
-public/static/**/*
-public/main.html
-.tags
-.vscode/

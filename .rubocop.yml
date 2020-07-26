@@ -1,15 +1,16 @@
 AllCops:
+  NewCops: enable
   Exclude:
     - 'db/**/*'
     - 'lib/**/*'
     - 'bin/**/*'
-    - 'node_modules/**/*'
     - 'Gemfile'
     - 'Rakefile'
     - 'config.ru'
-    - 'vendor/**/*'
-Metrics/LineLength:
-  Max: 120
+    - 'config/redis.rb'
+    - 'node_modules/**/*'
+Layout/LineLength:
+  Max: 150
 Metrics/MethodLength:
   Max: 50
 Metrics/ParameterLists:
@@ -27,12 +28,6 @@ Style/AsciiComments:
 Style/Documentation:
   Enabled: false
 Lint/AmbiguousRegexpLiteral:
-  Enabled: false
-Lint/DefEndAlignment:
-  AutoCorrect: true
-Lint/EndAlignment:
-  AutoCorrect: true
-Style/BracesAroundHashParameters:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -56,6 +51,7 @@ Style/NonNilCheck:
   IncludeSemanticChanges: true
 Style/Send:
   Enabled: true
-Rails:
-  Enabled: true
-  
+Layout/DefEndAlignment:
+  AutoCorrect: true
+Layout/EndAlignment:
+  AutoCorrect: true
